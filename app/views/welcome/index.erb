@@ -61,7 +61,7 @@
 
 
 $(document).ready(function(){
-	var austDay = new Date(2015, 5 - 1, 6, 19, 15);
+	var austDay = new Date(Date.UTC(2015, 5 - 1, 6, 19, 15));
 	// austDay = new Date(austDay.getFullYear() + 2, 1 - 1, 26);
 	$('#countdown').countdown({until: austDay});
 });

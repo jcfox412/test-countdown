@@ -1,0 +1,94 @@
+
+
+<style type="text/css">
+
+	body {
+		background: black;
+	}
+
+	#countdown { 
+		height: 50px;
+	}
+
+	#wrapper {
+    	position: fixed;
+    	top: 50%;
+    	left: 50%;
+    	margin: -10% 0 0 -20%;
+    	width: 40%;
+    	height: 20%;
+    	text-align: center;
+    	color: #CCCCCC;
+    	font-family: 'helvetica neue';
+
+	}
+	#wrapper a {
+		color: #CCCCCC;
+		text-decoration: none;
+	}
+
+	#wrapper p {
+		font-family: 'helvetica neue';
+		font-size: 16px;
+	}
+
+	#countdown {
+		background: black;
+		border: none;
+		font-size: 30px;
+		padding: 10px;
+	}
+
+	#logo {
+		height: 100px;
+		width: 100px;
+		margin-top: 30px;
+	}
+
+</style>
+
+<script type="text/javascript">
+ //  $('[data-countdown]').each(function() {
+ //   var $this = $(this), finalDate = $(this).data('countdown');
+ //   $this.countdown(finalDate, function(event) {
+ //     $this.html(event.strftime('%D days %H:%M:%S'));
+ //   });
+ // });
+
+	// $('#clock').countdown('2020/10/10', function(event) {
+	// 	$(this).html(event.strftime('%D days %H:%M:%S'));
+	// });
+
+
+$(document).ready(function(){
+	var austDay = new Date(2015, 5 - 1, 6, 19, 15);
+	// austDay = new Date(austDay.getFullYear() + 2, 1 - 1, 26);
+	$('#countdown').countdown({until: austDay});
+});
+
+// $(document).ready(function(){
+//     $("div").click(function(){
+//         $(this).hide();
+//     });
+// });
+</script>
+<!-- <p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p> -->
+<!-- <div id="defaultCountdown" data-countdown="2016/01/01"></div> -->
+<div id="wrapper">
+	<div id="content">
+		<div id="countdown">
+			<!-- <span id="clock"></span> -->
+		</div>
+		<div id="textContainer">
+			<br />
+			<p>The first rule of Nerf War is you DO NOT talk about Nerf War.</p>
+			<br />
+			<a href="http://engwiki/nerfwar">engwiki/nerfwar</a>
+		</div>
+		<div>
+			<img id="logo" src="http://i.imgur.com/u0E4ice.png" />
+		</div>
+	</div>
+</div>
